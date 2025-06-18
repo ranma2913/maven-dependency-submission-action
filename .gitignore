@@ -1,7 +1,8 @@
-lib
-
-node_modules
-target
-
-runtime
+*.iml
+.DS_Store
+.idea/
 cli
+lib
+node_modules
+runtime
+target
