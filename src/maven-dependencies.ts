@@ -26,7 +26,7 @@ export function parseDependencyTree(file: string): MavenArtifact | undefined {
   }
 
   lines.forEach(line => {
-    if (line.startsWith('\\+-') || line.startsWith('\\-') || line.startsWith('\\|')) {
+    if (line.length > 0 && (line.startsWith('\\+-') || line.startsWith('\\-') || line.startsWith('\\|'))) {
       // 💡Resolve typescript:S108 Nested blocks of code should not be left empty.
       // Configured during 'npm run build-exe'
     }
