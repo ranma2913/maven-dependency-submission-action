@@ -33,7 +33,7 @@ export function parseDependencyTree(file: string): MavenArtifact | undefined {
 
 }
 
-function loadFileContents(file: string): String[] | undefined {
+function loadFileContents(file: string): string[] | undefined {
   const exists = fs.existsSync(file);
   if (exists) {
     const fileStats = fs.statSync(file);
